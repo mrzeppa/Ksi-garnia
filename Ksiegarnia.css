@@ -1,0 +1,144 @@
+autorzy:before{
+    content: 'Autorzy: \A';
+    white-space: pre;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+autorzy autor:before{
+    content: "Id: " attr(autorId) "\A ";
+    white-space: pre;
+    color: blue;
+}
+
+
+autor imie:before{
+    content: "Imie: ";
+    color: red;
+}
+
+autor imie:after{
+    content: "\A ";
+    white-space: pre;
+}
+
+autor nazwisko:before{
+    content: "Nazwisko: ";
+    color: orange;
+}
+
+autor nazwisko:after{
+    content: "\A ";
+    white-space: pre;
+}
+
+/*-----------------------------------------------------------*/
+
+produkty:before{
+    content: "Produkty: \A";
+    white-space: pre;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+produkty ksiazki:before{
+    content: "\00a0 \00a0 \00a0 Ksiazki: \A";
+    white-space:pre;
+}
+
+ksiazka:before{
+    content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 Ilosc: " attr(ilosc);
+}
+
+ksiazka:after{
+    content: "\A";
+    white-space: pre;
+}
+
+ksiazka autor:before{
+    content: "\A \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 AutorId: " attr(refid);
+    white-space: pre;
+}
+
+ksiazka autor:after{
+    white-space: pre;
+    content: "\A ";
+}
+
+ksiazka nazwa:before{
+    content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 Nazwa: ";
+}
+
+ksiazka nazwa:after{
+    white-space: pre;
+    content: "\A ";
+}
+
+ksiazka cena:before{
+    content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 Cena: ";
+}
+
+ksiazka cena:after{
+    white-space: pre;
+    content: " " attr(currency) "\A ";
+}
+
+ksiazka liczbaStron:before{
+    content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 Liczba stron: ";
+}
+
+ksiazka liczbaStron:after{
+    content: "\A ";
+    white-space: pre;
+}
+
+ksiazka wydawnictwo:before{
+    content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 Wydawnictwo: ";
+}
+
+ksiazka wydawnictwo:after{
+    content: "\A ";
+    white-space: pre;
+}
+
+ksiazka rokWydania:before{
+    content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 Rok Wydania: ";
+}
+
+ksiazka rokWydania:after{
+    content: "\A ";
+    white-space: pre;
+}
+
+produkty gry:before{
+    content: "\00a0 \00a0 \00a0 Gry: \A";
+    white-space:pre;
+}
+
+produkty gry:after{
+    content: "\A";
+    white-space:pre;
+}
+
+gra:after{
+    content: "\A";
+    white-space: pre;
+}
+
+gra nazwa:before{
+    content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 Nazwa: ";
+}
+
+gra nazwa:after{
+    content: "\A";
+    white-space:pre;
+}
+
+gra cena:before{
+    content:"\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 Cena: ";
+}
+
+gra cena:after{
+    content: " " attr(currency) "\A";
+    white-space:pre;
+}

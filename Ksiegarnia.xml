@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<?xml-stylesheet type="text/css" href="Ksiegarnia.css" ?>
 <ksiegarnia>
     <autorzy>
         <autor autorId= "autor1">
@@ -28,10 +28,42 @@
         </autor>
     </autorzy>
 
+    <stanowiska>
+        <stanowisko stanowiskoId="stan1">
+            <nazwa>Stazysta</nazwa>
+            <pensja currency="zl">2000</pensja>
+        </stanowisko>
+
+        <stanowisko stanowiskoId="stan2">
+            <nazwa>Praktykant</nazwa>
+            <pensja currency="zl">2200</pensja>
+        </stanowisko>
+
+        <stanowisko stanowiskoId="stan3">
+            <nazwa>Kasjer</nazwa>
+            <pensja currency="zl">2800</pensja>
+        </stanowisko>
+
+        <stanowisko stanowiskoId="stan4">
+            <nazwa>Kierownik sklepu</nazwa>
+            <pensja currency="zl">3400</pensja>
+        </stanowisko>
+
+        <stanowisko stanowiskoId="stan5">
+            <nazwa>Kierownik zmiany</nazwa>
+            <pensja currency="zl">3400</pensja>
+        </stanowisko>
+
+        <stanowisko stanowiskoId="stan6">
+            <nazwa>Manager</nazwa>
+            <pensja currency="zl">5000</pensja>
+        </stanowisko>
+    </stanowiska>
+
     <produkty>
         <ksiazki>
-            <ksiazka>
-                <autor refid = "autor1"></autor>
+            <ksiazka ilosc="90">
+                <autor refid="autor1"/>
                 <nazwa>Matematyka</nazwa>
                 <cena currency="zl">19.99</cena>
                 <liczbaStron>189</liczbaStron>
@@ -39,8 +71,8 @@
                 <rokWydania>2018</rokWydania>
             </ksiazka>
 
-            <ksiazka>
-                <autor refid = "autor2"></autor>
+            <ksiazka ilosc="90">
+                <autor refid="autor2"/>
                 <nazwa>C# - Rusz Glowa</nazwa>
                 <cena currency="zl">99.99</cena>
                 <liczbaStron>925</liczbaStron>
@@ -48,8 +80,8 @@
                 <rokWydania>2018</rokWydania>
             </ksiazka>
 
-            <ksiazka>
-                <autor refid = "autor3"></autor>
+            <ksiazka ilosc="90">
+                <autor refid="autor3"/>
                 <nazwa>Powtorzenie maturalne - jezyk polski</nazwa>
                 <cena currency="zl">19.99</cena>
                 <liczbaStron>189</liczbaStron>
@@ -57,8 +89,8 @@
                 <rokWydania>2018</rokWydania>
             </ksiazka>
 
-            <ksiazka>
-                <autor refid = "autor4"></autor>
+            <ksiazka ilosc="90">
+                <autor refid="autor4"/>
                 <nazwa>Historia</nazwa>
                 <cena currency="zl">29.99</cena>
                 <liczbaStron>99</liczbaStron>
@@ -66,8 +98,8 @@
                 <rokWydania>2008</rokWydania>
             </ksiazka>
 
-            <ksiazka>
-                <autor refid = "autor5"></autor>
+            <ksiazka ilosc="90">
+                <autor refid="autor5"/>
                 <nazwa>Historia - matura rozszerzona</nazwa>
                 <cena currency="zl">44.99</cena>
                 <liczbaStron>324</liczbaStron>
@@ -75,8 +107,8 @@
                 <rokWydania>2011</rokWydania>
             </ksiazka>
 
-            <ksiazka>
-                <autor refid = "autor5"></autor>
+            <ksiazka ilosc="90">
+                <autor refid="autor5"/>
                 <nazwa>WOS - matura rozszerzona</nazwa>
                 <cena currency="zl">14.99</cena>
                 <liczbaStron>122</liczbaStron>
@@ -145,43 +177,12 @@
         </dlugopisy>
     </produkty>
 
-    <stanowiska>
-        <stanowisko stanowiskoId="stan1">
-            <nazwa>Stazysta</nazwa>
-            <pensja currency="zl">2000</pensja>
-        </stanowisko>
-
-        <stanowisko stanowiskoId="stan2">
-            <nazwa>Praktykant</nazwa>
-            <pensja currency="zl">2200</pensja>
-        </stanowisko>
-
-        <stanowisko stanowiskoId="stan3">
-            <nazwa>Kasjer</nazwa>
-            <pensja currency="zl">2800</pensja>
-        </stanowisko>
-
-        <stanowisko stanowiskoId="stan4">
-            <nazwa>Kierownik sklepu</nazwa>
-            <pensja currency="zl">3400</pensja>
-        </stanowisko>
-
-        <stanowisko stanowiskoId="stan5">
-            <nazwa>Kierownik zmiany</nazwa>
-            <pensja currency="zl">3400</pensja>
-        </stanowisko>
-
-        <stanowisko stanowiskoId="stan6">
-            <nazwa>Manager</nazwa>
-            <pensja currency="zl">5000</pensja>
-        </stanowisko>
-    </stanowiska>
 
     <pracownicy>
         <pracownik narodowosc="PL">
             <imie>Mariusz</imie>
             <nazwisko>Rzeppa</nazwisko>
-            <stanowisko idref="stan1"></stanowisko>
+            <stanowisko idref="stan1"/>
             <pesel>97979797979</pesel>
             <dataZatrudnienia>18.05.2018</dataZatrudnienia>
         </pracownik>
@@ -189,7 +190,7 @@
         <pracownik narodowosc="UKR">
             <imie>Sasha</imie>
             <nazwisko>Moroz</nazwisko>
-            <stanowisko idref="stan2"></stanowisko>
+            <stanowisko idref="stan2"/>
             <pesel>12312312312</pesel>
             <dataZatrudnienia>18.05.2018</dataZatrudnienia>
         </pracownik>
@@ -197,9 +198,10 @@
         <pracownik narodowosc="PL">
             <imie>Mateusz</imie>
             <nazwisko>Kowal</nazwisko>
-            <stanowisko idref="stan3"></stanowisko>
+            <stanowisko idref="stan3"/>
             <pesel>12331233123</pesel>
             <dataZatrudnienia>10.01.2018</dataZatrudnienia>
         </pracownik>
+
     </pracownicy>
 </ksiegarnia>
