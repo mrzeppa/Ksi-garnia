@@ -161,17 +161,17 @@
 
         <dlugopisy>
             <dlugopis>
-                <kolor>czarny</kolor>
+                <kolor>Czarny</kolor>
                 <cena currency="zl">1.99</cena>
             </dlugopis>
 
             <dlugopis>
-                <kolor>niebieski</kolor>
+                <kolor>Niebieski</kolor>
                 <cena currency="zl">1.99</cena>
             </dlugopis>
 
             <dlugopis>
-                <kolor>czerwony</kolor>
+                <kolor>Czerwony</kolor>
                 <cena currency="zl">2.99</cena>
             </dlugopis>
         </dlugopisy>

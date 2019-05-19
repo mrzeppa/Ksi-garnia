@@ -116,7 +116,6 @@ produkty gry:before{
 }
 
 produkty gry:after{
-    content: "\A";
     white-space:pre;
 }
 
@@ -141,4 +140,161 @@ gra cena:before{
 gra cena:after{
     content: " " attr(currency) "\A";
     white-space:pre;
+}
+
+produkty zeszyty:before{
+    content:"\00a0 \00a0 \00a0 Zeszyty: \A";
+    white-space: pre;
+}
+
+zeszyt:after{
+    content: "\A";
+    white-space:pre;
+}
+
+zeszyt nazwa:before{
+    content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 Nazwa: ";
+}
+
+zeszyt nazwa:after{
+    content: "\A";
+    white-space:pre;
+}
+
+zeszyt iloscKartek:before{
+    content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 Ilosc kartek: ";
+}
+
+zeszyt iloscKartek:after{
+    content: "\A";
+    white-space: pre;
+}
+
+zeszyt cena:before{
+    content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 Cena: ";
+}
+
+zeszyt cena:after{
+    content: " " attr(currency) " \A";
+    white-space:pre;
+}
+
+produkty dlugopisy:before{
+    content:"\00a0 \00a0 \00a0 Dlugopisy: \A";
+    white-space: pre;
+}
+
+dlugopisy dlugopis:after{
+    content: "\A";
+    white-space: pre;
+}
+
+dlugopis cena:before{
+    content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 Cena: ";
+}
+
+dlugopis cena:after{
+    content: " " attr(currency) " \A";
+    white-space:pre;
+}
+
+dlugopisy kolor:before{
+    content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 Kolor: ";
+}
+
+dlugopisy kolor:after{
+    content: " " attr(currency) " \A";
+    white-space:pre;
+}
+
+pracownicy:before{
+    content: 'Pracownicy: \A';
+    white-space: pre;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+pracownicy pracownik:before{
+    content: "Narodowosc: " attr(narodowosc) "\A";
+    white-space:pre;
+}
+
+pracownik:after{
+    content: "\A";
+    white-space:pre;
+}
+
+pracownik imie:before{
+    content: "Imie: ";
+}
+
+pracownik imie:after{
+    content: "\A";
+    white-space: pre;
+}
+
+pracownik nazwisko:before{
+    content: "Nazwisko: ";
+}
+
+pracownik nazwisko:after{
+    content: "\A";
+    white-space: pre;
+}
+
+pracownik stanowisko:before{
+    content: "StanowiskoId: " attr(idref) "\A";
+    white-space:pre;
+}
+
+pracownik pesel:before{
+    content: "Pesel: ";
+}
+
+pracownik pesel:after{
+    content: "\A";
+    white-space: pre;
+}
+
+pracownik dataZatrudnienia:before{
+    content: "Data zatrudnienia: ";
+}
+
+pracownik dataZatrudnienia:after{
+    content: "\A";
+    white-space: pre;
+}
+
+stanowiska:before{
+    content: 'Stanowiska: \A';
+    white-space: pre;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+stanowiska stanowisko:before{
+    content: "Id: " attr(autorId) "\A ";
+    white-space: pre;
+    color: blue;
+}
+
+
+stanowisko nazwa:before{
+    content: "Nazwa: ";
+    color: red;
+}
+
+stanowisko nazwa:after{
+    content: "\A ";
+    white-space: pre;
+}
+
+stanowisko pensja:before{
+    content: "Pensja: ";
+    color: orange;
+}
+
+stanowisko pensja:after{
+    content: " " attr(currency) "\A ";
+    white-space: pre;
 }
