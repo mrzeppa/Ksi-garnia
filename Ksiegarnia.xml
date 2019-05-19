@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ksiegarnia>
+    <autorzy>
+        <autor autorId= "autor1">
+            <imie>Jan</imie>
+            <nazwisko>Brzechwa</nazwisko>
+        </autor>
+        <autor autorId= "autor2">
+            <imie>Jennifer</imie>
+            <nazwisko>Greene</nazwisko>
+        </autor>
+        <autor autorId= "autor3">
+            <imie>Jan</imie>
+            <nazwisko>Kowalski</nazwisko>
+        </autor>
+        <autor autorId= "autor4">
+            <imie>Krzysztof</imie>
+            <nazwisko>Andrzejewski</nazwisko>
+        </autor>
+        <autor autorId= "autor5">
+            <imie>Michal</imie>
+            <nazwisko>Michalski</nazwisko>
+        </autor>
+        <autor autorId= "autor6">
+            <imie>Erno</imie>
+            <nazwisko>Rubik</nazwisko>
+        </autor>
+    </autorzy>
+
+    <produkty>
+        <ksiazki>
+            <ksiazka>
+                <autor refid = "autor1"></autor>
+                <nazwa>Matematyka</nazwa>
+                <cena currency="zl">19.99</cena>
+                <liczbaStron>189</liczbaStron>
+                <wydawnictwo>Kruk</wydawnictwo>
+                <rokWydania>2018</rokWydania>
+            </ksiazka>
+
+            <ksiazka>
+                <autor refid = "autor2"></autor>
+                <nazwa>C# - Rusz Glowa</nazwa>
+                <cena currency="zl">99.99</cena>
+                <liczbaStron>925</liczbaStron>
+                <wydawnictwo>Helion</wydawnictwo>
+                <rokWydania>2018</rokWydania>
+            </ksiazka>
+
+            <ksiazka>
+                <autor refid = "autor3"></autor>
+                <nazwa>Powtorzenie maturalne - jezyk polski</nazwa>
+                <cena currency="zl">19.99</cena>
+                <liczbaStron>189</liczbaStron>
+                <wydawnictwo>Kruk</wydawnictwo>
+                <rokWydania>2018</rokWydania>
+            </ksiazka>
+
+            <ksiazka>
+                <autor refid = "autor4"></autor>
+                <nazwa>Historia</nazwa>
+                <cena currency="zl">29.99</cena>
+                <liczbaStron>99</liczbaStron>
+                <wydawnictwo>Nowa Era</wydawnictwo>
+                <rokWydania>2008</rokWydania>
+            </ksiazka>
+
+            <ksiazka>
+                <autor refid = "autor5"></autor>
+                <nazwa>Historia - matura rozszerzona</nazwa>
+                <cena currency="zl">44.99</cena>
+                <liczbaStron>324</liczbaStron>
+                <wydawnictwo>Helion</wydawnictwo>
+                <rokWydania>2011</rokWydania>
+            </ksiazka>
+
+            <ksiazka>
+                <autor refid = "autor5"></autor>
+                <nazwa>WOS - matura rozszerzona</nazwa>
+                <cena currency="zl">14.99</cena>
+                <liczbaStron>122</liczbaStron>
+                <wydawnictwo>Helion</wydawnictwo>
+                <rokWydania>2012</rokWydania>
+            </ksiazka>
+        </ksiazki>
+
+        <gry>
+            <gra>
+                <nazwa>Kostka rubika</nazwa>
+                <cena currency="zl">12.99</cena>
+            </gra>
+
+            <gra>
+                <nazwa>Chinczyk</nazwa>
+                <cena currency="zl">19.99</cena>
+            </gra>
+
+            <gra>
+                <nazwa>Twister</nazwa>
+                <cena currency="zl">24.99</cena>
+            </gra>
+        </gry>
+
+        <zeszyty>
+            <zeszyt>
+                <nazwa>Brulion</nazwa>
+                <iloscKartek>100</iloscKartek>
+                <cena currency="zl">5.99</cena>
+
+            </zeszyt>
+            <zeszyt>
+                <nazwa>Zeszyt</nazwa>
+                <iloscKartek>80</iloscKartek>
+                <cena currency="zl">5.99</cena>
+
+            </zeszyt>
+            <zeszyt>
+                <nazwa>Zeszyt</nazwa>
+                <iloscKartek>160</iloscKartek>
+                <cena currency="zl">7.99</cena>
+            </zeszyt>
+            <zeszyt>
+                <nazwa>Zeszyt</nazwa>
+                <iloscKartek>240</iloscKartek>
+                <cena currency="zl">9.99</cena>
+            </zeszyt>
+        </zeszyty>
+
+        <dlugopisy>
+            <dlugopis>
+                <kolor>czarny</kolor>
+                <cena currency="zl">1.99</cena>
+            </dlugopis>
+
+            <dlugopis>
+                <kolor>niebieski</kolor>
+                <cena currency="zl">1.99</cena>
+            </dlugopis>
+
+            <dlugopis>
+                <kolor>czerwony</kolor>
+                <cena currency="zl">2.99</cena>
+            </dlugopis>
+        </dlugopisy>
+    </produkty>
+
+    <stanowiska>
+        <stanowisko stanowiskoId="stan1">
+            <nazwa>Stazysta</nazwa>
+            <pensja currency="zl">2000</pensja>
+        </stanowisko>
+
+        <stanowisko stanowiskoId="stan2">
+            <nazwa>Praktykant</nazwa>
+            <pensja currency="zl">2200</pensja>
+        </stanowisko>
+
+        <stanowisko stanowiskoId="stan3">
+            <nazwa>Kasjer</nazwa>
+            <pensja currency="zl">2800</pensja>
+        </stanowisko>
+
+        <stanowisko stanowiskoId="stan4">
+            <nazwa>Kierownik sklepu</nazwa>
+            <pensja currency="zl">3400</pensja>
+        </stanowisko>
+
+        <stanowisko stanowiskoId="stan5">
+            <nazwa>Kierownik zmiany</nazwa>
+            <pensja currency="zl">3400</pensja>
+        </stanowisko>
+
+        <stanowisko stanowiskoId="stan6">
+            <nazwa>Manager</nazwa>
+            <pensja currency="zl">5000</pensja>
+        </stanowisko>
+    </stanowiska>
+
+    <pracownicy>
+        <pracownik narodowosc="PL">
+            <imie>Mariusz</imie>
+            <nazwisko>Rzeppa</nazwisko>
+            <stanowisko idref="stan1"></stanowisko>
+            <pesel>97979797979</pesel>
+            <dataZatrudnienia>18.05.2018</dataZatrudnienia>
+        </pracownik>
+
+        <pracownik narodowosc="UKR">
+            <imie>Sasha</imie>
+            <nazwisko>Moroz</nazwisko>
+            <stanowisko idref="stan2"></stanowisko>
+            <pesel>12312312312</pesel>
+            <dataZatrudnienia>18.05.2018</dataZatrudnienia>
+        </pracownik>
+
+        <pracownik narodowosc="PL">
+            <imie>Mateusz</imie>
+            <nazwisko>Kowal</nazwisko>
+            <stanowisko idref="stan3"></stanowisko>
+            <pesel>12331233123</pesel>
+            <dataZatrudnienia>10.01.2018</dataZatrudnienia>
+        </pracownik>
+    </pracownicy>
+</ksiegarnia>
