@@ -1,0 +1,39 @@
+<!ATTLIST autor autorId ID #REQUIRED>
+<!ATTLIST stanowisko stanowiskoId ID #REQUIRED>
+<!ATTLIST pensja currency CDATA #REQUIRED>
+<!ATTLIST ksiazka ilosc CDATA #REQUIRED>
+<!ATTLIST autorId refid IDREF #REQUIRED>
+<!ATTLIST cena currency CDATA #REQUIRED>
+<!ATTLIST pracownik narodowosc  (PL|UKR|GER|UK) #REQUIRED)
+<!ATTLIST stanowiskoId refid IDREF #REQUIRED>
+<!-- ######################################################### -->
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT autor (imie, nazwisko)>
+<!ELEMENT autorzy (autor)>
+<!ELEMENT nazwa (#PCDATA)>
+<!ELEMENT pensja (#PCDATA)>
+<!ELEMENT stanowisko (nazwa, pensja)>
+<!ELEMENT stanowiska (stanowisko)>
+<!ELEMENT pesel (#PCDATA)>
+<!ELEMENT dataZatrudnienia (#PCDATA)>
+<!ELEMENT stanowiskoId (#PCDATA)>
+<!ELEMENT pracownik (imie, nazwisko, stanowiskoId, pesel, dataZatrudnienia)>
+<!ELEMENT pracownicy (pracownik)>
+<!ELEMENT rokWydania (#PCDATA)>
+<!ELEMENT wydawnictwo (#PCDATA)>
+<!ELEMENT cena (#PCDATA)>
+<!ELEMENT liczbaStron (#PCDATA)>
+<!ELEMENT autorId (#PCDATA)>
+<!ELEMENT ksiazka (autorId, nazwa, cena, liczbaStron, wydawnictwo, rokWydania)>
+<!ELEMENT ksiazki (ksiazka)>
+<!ELEMENT gra (nazwa, cena)>
+<!ELEMENT gry (gra)>
+<!ELEMENT iloscKartek (#PCDATA)>
+<!ELEMENT zeszyt (nazwa, iloscKartek, cena)>
+<!ELEMENT zeszyty (zeszyt)>
+<!ELEMENT kolor (#PCDATA)>
+<!ELEMENT dlugopis (kolor, cena)>
+<!ELEMENT dlugopisy (dlugopis)>
+<!ELEMENT produkty (ksiazki, gry, zeszyty, dlugopisy)>
+<!ELEMENT ksiegarnia (autorzy, stanowiska, produkty, pracownicy)>
