@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="Ksiegarnia.css" ?>
-<!DOCTYPE ksiegarnia SYSTEM "ksiegarnia.dtd">
+<!--<?xml-stylesheet type="text/css" href="Ksiegarnia.css" ?>-->
+<!--<!DOCTYPE ksiegarnia SYSTEM "ksiegarnia.dtd">-->
 <ksiegarnia>
     <autorzy>
         <autor autorId= "autor1">
@@ -31,32 +31,32 @@
 
     <stanowiska>
         <stanowisko stanowiskoId="stan1">
-            <nazwa>Stazysta</nazwa>
+            <nazwaStanowiska>Stazysta</nazwaStanowiska>
             <pensja currency="zl">2000</pensja>
         </stanowisko>
 
         <stanowisko stanowiskoId="stan2">
-            <nazwa>Praktykant</nazwa>
+            <nazwaStanowiska>Praktykant</nazwaStanowiska>
             <pensja currency="zl">2200</pensja>
         </stanowisko>
 
         <stanowisko stanowiskoId="stan3">
-            <nazwa>Kasjer</nazwa>
+            <nazwaStanowiska>Kasjer</nazwaStanowiska>
             <pensja currency="zl">2800</pensja>
         </stanowisko>
 
         <stanowisko stanowiskoId="stan4">
-            <nazwa>Kierownik sklepu</nazwa>
+            <nazwaStanowiska>Kierownik sklepu</nazwaStanowiska>
             <pensja currency="zl">3400</pensja>
         </stanowisko>
 
         <stanowisko stanowiskoId="stan5">
-            <nazwa>Kierownik zmiany</nazwa>
+            <nazwaStanowiska>Kierownik zmiany</nazwaStanowiska>
             <pensja currency="zl">3400</pensja>
         </stanowisko>
 
         <stanowisko stanowiskoId="stan6">
-            <nazwa>Manager</nazwa>
+            <nazwaStanowiska>Manager</nazwaStanowiska>
             <pensja currency="zl">5000</pensja>
         </stanowisko>
     </stanowiska>
@@ -65,7 +65,7 @@
         <ksiazki>
             <ksiazka ilosc="90">
                 <autorId refid="autor1"/>
-                <nazwa>Matematyka</nazwa>
+                <nazwaKsiazki>Matematyka</nazwaKsiazki>
                 <cena currency="zl">19.99</cena>
                 <liczbaStron>189</liczbaStron>
                 <wydawnictwo>Kruk</wydawnictwo>
@@ -74,7 +74,7 @@
 
             <ksiazka ilosc="90">
                 <autorId refid="autor2"/>
-                <nazwa>C# - Rusz Glowa</nazwa>
+                <nazwaKsiazki>C# - Rusz Glowa</nazwaKsiazki>
                 <cena currency="zl">99.99</cena>
                 <liczbaStron>925</liczbaStron>
                 <wydawnictwo>Helion</wydawnictwo>
@@ -83,7 +83,7 @@
 
             <ksiazka ilosc="90">
                 <autorId refid="autor3"/>
-                <nazwa>Powtorzenie maturalne - jezyk polski</nazwa>
+                <nazwaKsiazki>Powtorzenie maturalne - jezyk polski</nazwaKsiazki>
                 <cena currency="zl">19.99</cena>
                 <liczbaStron>189</liczbaStron>
                 <wydawnictwo>Kruk</wydawnictwo>
@@ -92,7 +92,7 @@
 
             <ksiazka ilosc="90">
                 <autorId refid="autor4"/>
-                <nazwa>Historia</nazwa>
+                <nazwaKsiazki>Historia</nazwaKsiazki>
                 <cena currency="zl">29.99</cena>
                 <liczbaStron>99</liczbaStron>
                 <wydawnictwo>Nowa Era</wydawnictwo>
@@ -101,7 +101,7 @@
 
             <ksiazka ilosc="90">
                 <autorId refid="autor5"/>
-                <nazwa>Historia - matura rozszerzona</nazwa>
+                <nazwaKsiazki>Historia - matura rozszerzona</nazwaKsiazki>
                 <cena currency="zl">44.99</cena>
                 <liczbaStron>324</liczbaStron>
                 <wydawnictwo>Helion</wydawnictwo>
@@ -110,7 +110,7 @@
 
             <ksiazka ilosc="90">
                 <autorId refid="autor5"/>
-                <nazwa>WOS - matura rozszerzona</nazwa>
+                <nazwaKsiazki>WOS - matura rozszerzona</nazwaKsiazki>
                 <cena currency="zl">14.99</cena>
                 <liczbaStron>122</liczbaStron>
                 <wydawnictwo>Helion</wydawnictwo>
@@ -120,41 +120,41 @@
 
         <gry>
             <gra>
-                <nazwa>Kostka rubika</nazwa>
+                <nazwaGry>Kostka rubika</nazwaGry>
                 <cena currency="zl">12.99</cena>
             </gra>
 
             <gra>
-                <nazwa>Chinczyk</nazwa>
+                <nazwaGry>Chinczyk</nazwaGry>
                 <cena currency="zl">19.99</cena>
             </gra>
 
             <gra>
-                <nazwa>Twister</nazwa>
+                <nazwaGry>Twister</nazwaGry>
                 <cena currency="zl">24.99</cena>
             </gra>
         </gry>
 
         <zeszyty>
             <zeszyt>
-                <nazwa>Brulion</nazwa>
+                <nazwaZeszytu>Brulion</nazwaZeszytu>
                 <iloscKartek>100</iloscKartek>
                 <cena currency="zl">5.99</cena>
 
             </zeszyt>
             <zeszyt>
-                <nazwa>Zeszyt</nazwa>
+                <nazwaZeszytu>Zeszyt</nazwaZeszytu>
                 <iloscKartek>80</iloscKartek>
                 <cena currency="zl">5.99</cena>
 
             </zeszyt>
             <zeszyt>
-                <nazwa>Zeszyt</nazwa>
+                <nazwaZeszytu>Zeszyt</nazwaZeszytu>
                 <iloscKartek>160</iloscKartek>
                 <cena currency="zl">7.99</cena>
             </zeszyt>
             <zeszyt>
-                <nazwa>Zeszyt</nazwa>
+                <nazwaZeszytu>Zeszyt</nazwaZeszytu>
                 <iloscKartek>240</iloscKartek>
                 <cena currency="zl">9.99</cena>
             </zeszyt>
@@ -185,7 +185,7 @@
             <nazwisko>Rzeppa</nazwisko>
             <stanowiskoId refid="stan1"/>
             <pesel>97979797979</pesel>
-            <dataZatrudnienia>18.05.2018</dataZatrudnienia>
+            <dataZatrudnienia>2018-09-24</dataZatrudnienia>
         </pracownik>
 
         <pracownik narodowosc="UKR">
@@ -193,7 +193,7 @@
             <nazwisko>Moroz</nazwisko>
             <stanowiskoId refid="stan2"/>
             <pesel>12312312312</pesel>
-            <dataZatrudnienia>18.05.2018</dataZatrudnienia>
+            <dataZatrudnienia>2018-10-02</dataZatrudnienia>
         </pracownik>
 
         <pracownik narodowosc="PL">
@@ -201,7 +201,7 @@
             <nazwisko>Kowal</nazwisko>
             <stanowiskoId refid="stan3"/>
             <pesel>12331233123</pesel>
-            <dataZatrudnienia>10.01.2018</dataZatrudnienia>
+            <dataZatrudnienia>2017-02-18</dataZatrudnienia>
         </pracownik>
 
     </pracownicy>

@@ -11,9 +11,9 @@
 <!ELEMENT imie (#PCDATA)>
 <!ELEMENT autor (imie, nazwisko)>
 <!ELEMENT autorzy (autor)>
-<!ELEMENT nazwa (#PCDATA)>
+<!ELEMENT nazwaStanowiska (#PCDATA)>
 <!ELEMENT pensja (#PCDATA)>
-<!ELEMENT stanowisko (nazwa, pensja)>
+<!ELEMENT stanowisko (nazwaStanowiska, pensja)>
 <!ELEMENT stanowiska (stanowisko)>
 <!ELEMENT pesel (#PCDATA)>
 <!ELEMENT dataZatrudnienia (#PCDATA)>
@@ -25,12 +25,15 @@
 <!ELEMENT cena (#PCDATA)>
 <!ELEMENT liczbaStron (#PCDATA)>
 <!ELEMENT autorId (#PCDATA)>
-<!ELEMENT ksiazka (autorId, nazwa, cena, liczbaStron, wydawnictwo, rokWydania)>
+<!ELEMENT nazwaKsiazki (#PCDATA)>
+<!ELEMENT ksiazka (autorId, nazwaKsiazki, cena, liczbaStron, wydawnictwo, rokWydania)>
 <!ELEMENT ksiazki (ksiazka)>
-<!ELEMENT gra (nazwa, cena)>
+<!ELEMENT nazwaGry (#PCDATA)>
+<!ELEMENT gra (nazwaGry, cena)>
 <!ELEMENT gry (gra)>
 <!ELEMENT iloscKartek (#PCDATA)>
-<!ELEMENT zeszyt (nazwa, iloscKartek, cena)>
+<!ELEMENT nazwaZeszytu (#PCDATA)>
+<!ELEMENT zeszyt (nazwaZeszytu, iloscKartek, cena)>
 <!ELEMENT zeszyty (zeszyt)>
 <!ELEMENT kolor (#PCDATA)>
 <!ELEMENT dlugopis (kolor, cena)>

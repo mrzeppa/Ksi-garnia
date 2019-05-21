@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:attribute name="autorId">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="stanowiskoId">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="refid">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="currency">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="ilosc">
+        <xs:simpleType>
+            <xs:restriction base="xs:int">
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="narodowosc">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:complexType name="refidType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute ref="refid"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+<!--########-->
+    <xs:complexType name="autorType">
+        <xs:sequence>
+            <xs:element name="imie" type="xs:string"/>
+            <xs:element name="nazwisko" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute ref="autorId"/>
+    </xs:complexType>
+
+    <xs:complexType name="autorzyType">
+        <xs:sequence>
+            <xs:element name="autor" type="autorType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+<!--########-->
+
+    <xs:complexType name="pensjaType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="currency" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="cenaType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="currency" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="stanowiskoType">
+        <xs:sequence>
+            <xs:element name="nazwaStanowiska" type="xs:string"/>
+            <xs:element name="pensja" type="pensjaType"/>
+        </xs:sequence>
+        <xs:attribute ref="stanowiskoId"/>
+    </xs:complexType>
+
+    <xs:complexType name="stanowiskaType">
+        <xs:sequence>
+            <xs:element name="stanowisko" type="stanowiskoType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+<!--########-->
+    <xs:complexType name="ksiazkaType">
+        <xs:sequence>
+            <xs:element name="autorId" type="refidType"/>
+            <xs:element name="nazwaKsiazki" type="xs:string"/>
+            <xs:element name="cena" type="cenaType"/>
+            <xs:element name="liczbaStron" type="xs:int"/>
+            <xs:element name="wydawnictwo" type="xs:string"/>
+            <xs:element name="rokWydania" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute ref="ilosc"/>
+    </xs:complexType>
+
+
+    <xs:complexType name="ksiazkiType">
+        <xs:sequence>
+            <xs:element name="ksiazka" type="ksiazkaType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="graType">
+        <xs:sequence>
+            <xs:element name="nazwaGry" type="xs:string"/>
+            <xs:element name="cena" type="cenaType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="gryType">
+        <xs:sequence>
+            <xs:element name="gra" type="graType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="zeszytType">
+        <xs:sequence>
+            <xs:element name="nazwaZeszytu" type="xs:string"/>
+            <xs:element name="iloscKartek" type="xs:int"/>
+            <xs:element name="cena" type="cenaType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="zeszytyType">
+        <xs:sequence>
+            <xs:element name="zeszyt" type="zeszytType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="dlugopisType">
+        <xs:sequence>
+            <xs:element name="kolor" type="xs:string"/>
+            <xs:element name="cena" type="cenaType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="dlugopisyType">
+        <xs:sequence>
+            <xs:element name="dlugopis" type="dlugopisType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="produktyType">
+        <xs:sequence>
+            <xs:element name="ksiazki" type="ksiazkiType"/>
+            <xs:element name="gry" type="gryType"/>
+            <xs:element name="zeszyty" type="zeszytyType"/>
+            <xs:element name="dlugopisy" type="dlugopisyType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+<!--##########-->
+
+    <xs:complexType name="pracownikType">
+        <xs:sequence>
+            <xs:element name="imie" type="xs:string"/>
+            <xs:element name="nazwisko" type="xs:string"/>
+            <xs:element name="stanowiskoId" type="refidType"/>
+            <xs:element name="pesel" type="xs:string"/>
+            <xs:element name="dataZatrudnienia" type="xs:date"/>
+        </xs:sequence>
+        <xs:attribute ref="narodowosc"/>
+    </xs:complexType>
+
+    <xs:complexType name="pracownicyType">
+        <xs:sequence>
+            <xs:element name="pracownik" type="pracownikType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+<!--###########-->
+    <xs:complexType name="ksiegarniaType">
+        <xs:sequence>
+            <xs:element name="autorzy" type="autorzyType"/>
+            <xs:element name="stanowiska" type="stanowiskaType"/>
+            <xs:element name="produkty" type="produktyType"/>
+            <xs:element name="pracownicy" type="pracownicyType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="ksiegarnia" type="ksiegarniaType">
+        <xs:key name="autorKey">
+            <xs:selector xpath=".//autorzy/autor"/>
+            <xs:field xpath="@autorId"/>
+        </xs:key>
+        <xs:keyref name="autorIdRef" refer="autorKey">
+            <xs:selector xpath=".//produkty/ksiazki/ksiazka/autorId"/>
+            <xs:field xpath="@refid"/>
+        </xs:keyref>
+
+        <xs:key name="stanowiskoKey">
+            <xs:selector xpath=".//stanowiska/stanowisko"/>
+            <xs:field xpath="@stanowiskoId"/>
+        </xs:key>
+        <xs:keyref name="stanowiskoIdRef" refer="stanowiskoKey">
+            <xs:selector xpath=".//pracownicy/pracownik/stanowiskoId"/>
+            <xs:field xpath="@refid"/>
+        </xs:keyref>
+    </xs:element>
+
+
+</xs:schema>
