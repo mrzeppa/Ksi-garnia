@@ -42,6 +42,8 @@
 <!ELEMENT pracownik (imie|nazwisko|stanowiskoId|pesel|dataZatrudnienia)*>
 <!ATTLIST pracownik
         narodowosc (PL|UKR|UK) #REQUIRED>
+<!ATTLIST pracownik
+        userId CDATA #REQUIRED>
 <!ELEMENT stanowiskoId (#PCDATA)>
 <!ATTLIST stanowiskoId
         refid CDATA #REQUIRED>

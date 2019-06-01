@@ -14,6 +14,13 @@
         </xs:simpleType>
     </xs:attribute>
 
+    <xs:attribute name="userId">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
     <xs:attribute name="refid">
         <xs:simpleType>
             <xs:restriction base="xs:string">
@@ -176,6 +183,7 @@
             <xs:element name="dataZatrudnienia" type="xs:date"/>
         </xs:sequence>
         <xs:attribute ref="narodowosc"/>
+        <xs:attribute ref="userId"/>
     </xs:complexType>
 
     <xs:complexType name="pracownicyType">
