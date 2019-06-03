@@ -39,7 +39,7 @@ public class AuthorCRUD {
         }
         return stringBuilder.toString();
     }
-    public void createBook(String imie, String nazwisko) throws IOException {
+    public void createAuthor(String imie, String nazwisko) throws IOException {
         int authorId = getAuthorNextId();
         Node n = document.selectSingleNode("//ksiegarnia/autorzy");
         Element root = (Element) n;

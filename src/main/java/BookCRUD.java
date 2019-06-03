@@ -49,7 +49,8 @@ public class BookCRUD {
         Element noOfPages = book.addElement("liczbaStron");
         Element publisher = book.addElement("wydawnictwo");
         Element year = book.addElement("rokWydania");
-        root.addAttribute("ilosc", ilosc);
+        book.addAttribute("ilosc", ilosc);
+        book.addAttribute("ksiazkaId", "ks" + getBookNextId());
         author.addAttribute("refid", autorId);
         price.addAttribute("currency", currency);
         bookName.setText(nazwaKsiazki);
@@ -71,7 +72,7 @@ public class BookCRUD {
     }
 
     public void delete(String xPath) throws IOException {
-        Node node = this.document.selectSingleNode(xPath);
+        Node node = this.document.selectSingleNode("//ksiegarnia/produkty/ksiazki/ksiazka[@ksiazkaId='" + xPath + "']");
         node.detach();
         save();
     }
@@ -83,5 +84,27 @@ public class BookCRUD {
             Element e = (Element) n;
             System.out.println(this.getContent(e));
         }
+    }
+
+    public void updateName(String old, String neww) throws IOException {
+        Node node = this.document.selectSingleNode("//ksiegarnia/produkty/ksiazki/ksiazka[@ksiazkaId='" + old + "']");
+        Element n = (Element) node;
+//        System.out.println(n);
+        n.element("nazwaKsiazki").setText(neww);
+        save();
+    }
+
+    public void updatePrice(String old, String neww) throws IOException {
+        Node node = this.document.selectSingleNode("//ksiegarnia/produkty/ksiazki/ksiazka[@ksiazkaId='" + old + "']");
+        Element n = (Element) node;
+        n.element("cena").setText(neww);
+        save();
+    }
+
+
+
+    public int getBookNextId(){
+        List<Node> nodes = this.document.selectNodes("ksiegarnia/produkty/ksiazki/ksiazka");
+        return nodes.size() + 1;
     }
 }

@@ -18,6 +18,8 @@
 <!ELEMENT ksiazka (autorId|nazwaKsiazki|cena|liczbaStron|wydawnictwo|rokWydania)*>
 <!ATTLIST ksiazka
         ilosc CDATA #REQUIRED>
+<!ATTLIST ksiazka
+        ksiazkaId CDATA #REQUIRED>
 <!ELEMENT autorId (#PCDATA)>
 <!ATTLIST autorId
         refid CDATA #REQUIRED>

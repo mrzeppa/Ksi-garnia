@@ -35,6 +35,13 @@
         </xs:simpleType>
     </xs:attribute>
 
+    <xs:attribute name="ksiazkaId">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
     <xs:attribute name="ilosc">
         <xs:simpleType>
             <xs:restriction base="xs:int">
@@ -114,6 +121,7 @@
             <xs:element name="rokWydania" type="xs:int"/>
         </xs:sequence>
         <xs:attribute ref="ilosc"/>
+        <xs:attribute ref="ksiazkaId"/>
     </xs:complexType>
 
 

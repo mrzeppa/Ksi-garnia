@@ -1,16 +1,132 @@
-autorzy:before{
+* {
+    -webkit-box-sizing: border-box;
+}
+
+ksiegarnia > *:hover {
+    border: 2px solid #452103;
+}
+
+ksiegarnia > * {
+    padding: 10px;
+}
+
+ksiegarnia {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    color: #121113;
+    background-image: linear-gradient(white, red);
+    font-family: "Courier New", Courier, monospace;
+}
+
+ksiegarnia > autorzy:before {
+    letter-spacing: 5px;
+    font-style: oblique;
+    padding-bottom: 10px;
     content: 'Autorzy: \A';
-    white-space: pre;
+    display: block;
+    font-size: 1.5em;
     font-weight: bold;
-    font-size: 130%;
+    text-decoration-style: wavy;
+    text-decoration-color: #222725;
+    text-decoration-line: underline;
+}
+ksiegarnia > autorzy > autor:before {
+    font-style: oblique;
+    padding-bottom: 10px;
+    counter-increment: profile_counter;
+
+
 }
 
-autorzy autor:before{
-    content: "Id: " attr(autorId) "\A ";
-    white-space: pre;
-    color: blue;
+
+autor{
+    flex: 1 0 25%; /* explanation below */
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    background-color: #4238a5;
+    border: 5px dashed #5045d0;
+    padding: 10px;
+    border-radius: 5px;
+    animation-name: changeBackground;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
+stanowisko{
+    flex: 1 0 25%; /* explanation below */
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    background-color: white;
+    border: 5px dashed #5045d0;
+    padding: 10px;
+    border-radius: 5px;
+    animation-name: changeBackground;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+ksiazka{
+    flex: 1 0 25%; /* explanation below */
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    background-color: orange;
+    border: 5px solid #5045d0;
+    padding: 10px;
+    border-radius: 5px;
+    animation-name: changeBackground;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+gra{
+    flex: 1 0 25%; /* explanation below */
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    background-color: red;
+    border: 5px solid #5045d0;
+    padding: 10px;
+    border-radius: 5px;
+    animation-name: changeBackground;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+zeszyt{
+    flex: 1 0 25%; /* explanation below */
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    background-color: green;
+    border: 5px solid #5045d0;
+    padding: 10px;
+    border-radius: 5px;
+    animation-name: changeBackground;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+dlugopis{
+    flex: 1 0 25%; /* explanation below */
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    color: white;
+    background-color: black;
+    border: 5px solid #5045d0;
+    padding: 10px;
+    border-radius: 5px;
+    animation-name: changeBackground;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
 
 autor imie:before{
     content: "Imie: ";
@@ -35,15 +151,27 @@ autor nazwisko:after{
 /*-----------------------------------------------------------*/
 
 produkty:before{
-    content: "Produkty: \A";
-    white-space: pre;
+    font-style: oblique;
+    padding-bottom: 10px;
+    content: "Produkty";
+    display: block;
+    font-size: 1.5em;
     font-weight: bold;
-    font-size: 130%;
+    text-decoration-style: double;
+    text-decoration-color: #222725;
+    text-decoration-line: underline;
 }
 
 produkty ksiazki:before{
-    content: "\00a0 \00a0 \00a0 Ksiazki: \A";
+    content: "\00a0 \00a0 \00a0 Ksiazki: \A \A";
+    font-size: 1em;
     white-space:pre;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration-style: double;
+    text-decoration-color: #222725;
+    text-decoration-line: underline;
 }
 
 ksiazka:before{
@@ -111,8 +239,16 @@ ksiazka rokWydania:after{
 }
 
 produkty gry:before{
-    content: "\00a0 \00a0 \00a0 Gry: \A";
+    content: "\00a0 \00a0 \00a0 Gry: \A \A";
     white-space:pre;
+    font-size: 1em;
+    white-space:pre;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration-style: double;
+    text-decoration-color: #222725;
+    text-decoration-line: underline;
 }
 
 produkty gry:after{
@@ -143,8 +279,16 @@ gra cena:after{
 }
 
 produkty zeszyty:before{
-    content:"\00a0 \00a0 \00a0 Zeszyty: \A";
+    content:"\00a0 \00a0 \00a0 Zeszyty: \A \A";
     white-space: pre;
+    font-size: 1em;
+    white-space:pre;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration-style: double;
+    text-decoration-color: #222725;
+    text-decoration-line: underline;
 }
 
 zeszyt:after{
@@ -180,8 +324,16 @@ zeszyt cena:after{
 }
 
 produkty dlugopisy:before{
-    content:"\00a0 \00a0 \00a0 Dlugopisy: \A";
+    content:"\00a0 \00a0 \00a0 Dlugopisy: \A \A";
     white-space: pre;
+    font-size: 1em;
+    white-space:pre;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration-style: double;
+    text-decoration-color: #222725;
+    text-decoration-line: underline;
 }
 
 dlugopisy dlugopis:after{
@@ -217,6 +369,20 @@ pracownicy:before{
 pracownicy pracownik:before{
     content: "Narodowosc: " attr(narodowosc) "\A";
     white-space:pre;
+}
+
+pracownik{
+    flex: 1 0 25%; /* explanation below */
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    background-color: #ccaa00;
+    border: 5px dashed #5045d0;
+    padding: 10px;
+    border-radius: 5px;
+    animation-name: changeBackground;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 pracownik:after{
@@ -268,12 +434,19 @@ pracownik dataZatrudnienia:after{
 stanowiska:before{
     content: 'Stanowiska: \A';
     white-space: pre;
+    font-style: oblique;
+    padding-bottom: 10px;
+    display: block;
+    width: 100%;
+    font-size: 1.5em;
     font-weight: bold;
-    font-size: 130%;
+    text-decoration-style: double;
+    text-decoration-color: #222725;
+    text-decoration-line: underline;
 }
 
 stanowiska stanowisko:before{
-    content: "Id: " attr(autorId) "\A ";
+    content: "Id: " attr(stanowiskoId) "\A ";
     white-space: pre;
     color: blue;
 }

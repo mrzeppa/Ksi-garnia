@@ -4,10 +4,16 @@
     <list default="true" id="58521fa5-96f8-40b9-8394-dece967e4dc2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ksiegarnia.css" beforeDir="false" afterPath="$PROJECT_DIR$/Ksiegarnia.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ksiegarnia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Ksiegarnia.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KsiegarniaXML.iml" beforeDir="false" afterPath="$PROJECT_DIR$/KsiegarniaXML.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ksiegarnia.dtd" beforeDir="false" afterPath="$PROJECT_DIR$/ksiegarnia.dtd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ksiegarnia.html" beforeDir="false" afterPath="$PROJECT_DIR$/ksiegarnia.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ksiegarnia.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/ksiegarnia.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ksiegarnia.xsl" beforeDir="false" afterPath="$PROJECT_DIR$/ksiegarnia.xsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AuthorCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AuthorCRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BookCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookCRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,115 +27,107 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Ksiegarnia.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1008">
-                  <caret line="2" selection-start-line="2" selection-end-line="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ksiegarnia.xsl">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="143" column="34" selection-start-line="143" selection-start-column="34" selection-end-line="143" selection-end-column="34" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/ksiegarnia.xsd">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="262">
-                  <caret line="185" column="36" selection-start-line="185" selection-start-column="36" selection-end-line="185" selection-end-column="36" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ksiegarnia.dtd">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="262">
-                  <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pom.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="403">
-                  <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/BookCRUD.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/AuthorCRUD.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="293">
-                  <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/resources/bookshop.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="106" column="16" lean-forward="true" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Ksiegarnia.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="262">
-                  <caret line="171" column="45" selection-start-line="171" selection-start-column="45" selection-end-line="171" selection-end-column="45" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ksiegarnia.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="98" column="16" lean-forward="true" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksiegarnia.xsl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="166" column="34" selection-start-line="166" selection-start-column="34" selection-end-line="166" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksiegarnia.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1105">
+              <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksiegarnia.dtd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ksiegarnia.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="297" lean-forward="true" selection-start-line="297" selection-end-line="297" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/BookCRUD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="92" selection-start-line="92" selection-end-line="92" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/AuthorCRUD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-104">
+              <caret line="45" column="50" lean-forward="true" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/bookshop.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -148,6 +146,7 @@
       <find>curren</find>
       <find>datazatr</find>
       <find>data</find>
+      <find>ksiaz</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,12 +161,12 @@
         <option value="$PROJECT_DIR$/ksiegarnia.xsl" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/bookshop.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/BookCRUD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/AuthorCRUD.java" />
-        <option value="$PROJECT_DIR$/Ksiegarnia.xml" />
         <option value="$PROJECT_DIR$/ksiegarnia.dtd" />
         <option value="$PROJECT_DIR$/ksiegarnia.xsd" />
+        <option value="$PROJECT_DIR$/Ksiegarnia.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/BookCRUD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
       </list>
     </option>
   </component>
@@ -189,6 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -226,11 +226,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559411487291" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559596000026" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -285,7 +284,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -293,19 +292,19 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.22919819" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.23187633" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.33494365" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.23188406" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.23185265" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3347779" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
@@ -351,89 +350,83 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Ksiegarnia.xsd" />
-    <entry file="file://$PROJECT_DIR$/Ksiegarnia.css">
+    <entry file="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/org/dom4j/io/XMLWriter.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bookshop.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5049">
-          <caret line="297" column="32" selection-start-line="297" selection-start-column="32" selection-end-line="297" selection-end-column="32" />
+        <state relative-caret-position="17">
+          <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ksiegarnia.xsl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="143" column="34" selection-start-line="143" selection-start-column="34" selection-end-line="143" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/org/dom4j/io/XMLWriter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-731">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/bookshop.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="106" column="16" lean-forward="true" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BookCRUD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AuthorCRUD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksiegarnia.dtd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+          <caret line="166" column="34" selection-start-line="166" selection-start-column="34" selection-end-line="166" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ksiegarnia.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="185" column="36" selection-start-line="185" selection-start-column="36" selection-end-line="185" selection-end-column="36" />
+        <state relative-caret-position="-1105">
+          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksiegarnia.dtd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AuthorCRUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-104">
+          <caret line="45" column="50" lean-forward="true" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ksiegarnia.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="297" lean-forward="true" selection-start-line="297" selection-end-line="297" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BookCRUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ksiegarnia.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="171" column="45" selection-start-line="171" selection-start-column="45" selection-end-line="171" selection-end-column="45" />
+        <state relative-caret-position="476">
+          <caret line="98" column="16" lean-forward="true" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
